@@ -3,128 +3,148 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My profile</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link href="./css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/fullpage.css " />
-    <link href="./style.css" rel="stylesheet">
+    <title>Inscard generator</title>
+    <link rel="stylesheet" href="./font-loader.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            content: ["./src/**/*.{html,js}"],
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'roboto': ['Roboto', "sans-serif"],
+                        'roboto-mono': ["Roboto Mono", "monospace"],
+                        'ins': ["Instagram Sans", "sans-serif"],
+                        'poppins': ['Poppins', "sans-serif"]
+                    }
+                },
+            },
+            plugins: [],
+        }
+    </script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+
 </head>
 
-<body class="bg">
-    <div class="bg-blur bg-blur__white__gradient flex flex-row app relative" id="app">
-        <section id="home" class="h-screen min-w-screen">
-            <div class="slide p-10 px-5 h-screen">
-                <div class="rounded-3xl overflow-hidden relative h-full main__img">
-                    <img src="./assets/anh2.jpg" class="h-full">
-                    <div class="absolute top-0 left-0 z-10 w-full h-full flex flex-col">
-                        <div class="p-2 py-3">
-                            <p class="text-center text-white text-xl">nghia.cangao</p>
+<body class="bg-blue-50 flex justify-center items-center w-screen h-screen">
+    <div class="flex w-5/6">
+        <div class="flex flex-col justify-center flex-grow items-center">
+            <div class="w-fit">
+                <h1 class="font-roboto text-6xl font-bold text-blue-900 w-fit tracking-wider">InsCard Generator</h1>
+                <p class="text-gray-400 text-lg font-semibold">Insert your image and we will do all the rest</p>
+            </div>
+            <div class="gap-2 w-1/2 grid grid-cols-3">
+                <div
+                    class="flex items-center border-dashed border-2 p-5 rounded-full border-blue-100 pr-20 mt-20 col-span-3 relative">
+                    <div class="h-14 w-14 rounded-full bg-sky-300 shadow-xl flex justify-center items-center">
+                        <i class="fa-solid fa-upload" style="color: #ffffff;"></i>
+                    </div>
+                    <p class="ml-5 font-semibold text-gray-400"><span class="text-sky-400">Upload image file</span>
+                        (.jpeg, .png)</p>
+                    <input type="file" class="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer"
+                        accept=".png,.jpg,.jpeg" id="url_upload_input">
+                </div>
+                <div class=" col-span-3">
+                    <input type="text" id="url_input"
+                        class="w-full border-2 border-blue-200 p-2 px-3 outline-none focus:border-blue-500"
+                        placeholder="Image url">
+                </div>
+                <div class="col-span-3">
+                    <input type="text" id="avt_input"
+                        class="w-full border-2 border-blue-200 p-2 px-3 outline-none focus:border-blue-500"
+                        placeholder="Avatar url">
+                </div>
+                <div class="col-span-3">
+                    <input type="text" id="name_input"
+                        class="w-full border-2 border-blue-200 p-2 px-3 outline-none focus:border-blue-500"
+                        placeholder="Nickname">
+                </div>
+
+                <input type="text" id="posts_input"
+                    class="border-2 border-blue-200 p-2 px-3 outline-none focus:border-blue-500 col-span-1"
+                    placeholder=" Post number">
+                <input type="text" id="followers_input"
+                    class="border-2 border-blue-200 p-2 px-3 outline-none focus:border-blue-500 col-span-1"
+                    placeholder=" Followers number">
+                <input type="text" id="followings_input"
+                    class="border-2 border-blue-200 p-2 px-3 outline-none focus:border-blue-500 col-span-1"
+                    placeholder=" Followings number">
+
+                <div class="col-span-3">
+                    <button id="download"
+                        class="p-2 w-full flex bg-sky-400 text-white font-roboto justify-center items-center">
+                        <i class="fa-solid fa-download"></i>
+                        <span class="ml-3" id="status_btn">Download</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="flex-none p-2 bg-white shadow-2xl" id="node">
+            <div id="bg_img" class="w-[700px] h-[700px] bg-cover">
+                <div class="w-full h-full backdrop-blur-sm z-10 brightness-[0.98] flex justify-center items-center">
+                    <div id="fore_img" class="w-[350px] h-[560px] bg-white z-10 relative rounded-[30px]
+                     shadow-[0_35px_35px_rgba(0,0,0,0.5)] bg-cover">
+                        <div class="w-7 h-7 absolute top-4 right-7">
+                            <img src="./assets/bar.png" />
                         </div>
-                        <div class="grid grid-cols-4 px-7">
-                            <div>
-                                <div class="overflow-hidden rounded-full h-16 w-16 mx-auto">
-                                    <img src="./assets/anh1.jpg">
+                        <div class="flex items-center justify-center mt-5">
+                            <h1 class="font-bold text-white font-ins block" id="label_name">katsuwoo.photo</h1>
+                            <div class="w-5 h-5 ml-2">
+                                <img src="./assets/down.png" />
+                            </div>
+                        </div>
+                        <div class="flex w-full justify-center mt-6 items-center">
+                            <div class="relative">
+                                <div class="h-16 w-16 rounded-full overflow-hidden mr-2">
+                                    <img id="avatar_1"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/6/66/Square_Panorama_of_Aru_Valley%2C_Jammu_and_Kashmir%2C_India.jpg" />
                                 </div>
-                                <p class="text-white text-center text-xl">NGHIA</p>
+                                <div class="bg-white w-fit h-fit rounded-full absolute bottom-1 right-2">
+                                    <img src="./assets/add.svg" />
+                                </div>
                             </div>
-                            <div>
-                                <p class="text-center text-white text-2xl">1280</p>
-                                <p class="text-center text-white">Posts</p>
-                            </div>
-                            <div>
-                                <p class="text-center text-white text-2xl">2K+</p>
-                                <p class="text-center text-white">Followers</p>
-                            </div>
-                            <div>
-                                <p class="text-center text-white text-2xl">259</p>
-                                <p class="text-center text-white">Following</p>
+                            <div class="flex justify-evenly font-ins">
+                                <div class="mx-2">
+                                    <h1 class="font-semibold text-white text-2xl text-center" id="label_posts">82</h1>
+                                    <p class="text-white font-semibold text-center text-sm">Posts</p>
+                                </div>
+                                <div class="mx-2">
+                                    <h1 class="font-semibold text-white text-2xl text-center" id="label_followers">82
+                                    </h1>
+                                    <p class="text-white font-semibold text-center text-sm">Follwers</p>
+                                </div>
+                                <div class="mx-2">
+                                    <h1 class="font-semibold text-white text-2xl text-center" id="label_followings">
+                                        82.1k
+                                    </h1>
+                                    <p class="text-white font-semibold text-center text-sm">Followings</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="h-full flex flex-col justify-center">
-                            <div>
-                                <p class="text-center text-white text-2xl">Ở đời cái đẹp nhất là hạnh phúc</p>
-                                <p class="text-center text-white text-2xl">Người đẹp nhất là người mình yêu</p>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-5 p-5">
-                            <div class="h-8 my-auto">
-                                <img src="./assets/home.png" class="h-full mx-auto">
-                            </div>
-                            <div class="h-8 my-auto">
-                                <img src="./assets/search.png" class="h-full mx-auto">
-                            </div>
-                            <div class="h-8 my-auto">
-                                <img src="./assets/add.png" class="h-full mx-auto">
-                            </div>
-                            <div class="h-8 my-auto">
-                                <img src="./assets/like.png" class="h-full mx-auto">
-                            </div>
-                            <div class="h-8 my-auto">
-                                <img src="./assets/follow.png" class="h-full mx-auto">
+                        <div class="absolute bottom-0 left-0 w-full flex justify-around px-4 pb-5">
+                            <img class="w-6 h-6" src="./assets/home.png" />
+                            <img class="w-6 h-6" src="./assets/search.png" />
+                            <img class="w-6 h-6" src="./assets/add.png" />
+                            <img class="w-6 h-6" src="./assets/like.png" />
+                            <div class="w-6 h-6 overflow-hidden rounded-full border-[2px] border-white">
+                                <img id="avatar_2"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/6/66/Square_Panorama_of_Aru_Valley%2C_Jammu_and_Kashmir%2C_India.jpg" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="h-screen w-screen" id="social">
-            <div class="bg-gray-50 h-screen">
-                <div class="bg-indigo-400 h-40 w-full p-8">
-                    <p class="text-white text-center text-3xl">Contact me</p>
-                </div>
-                <div class="-mt-28">
-
-                    <div class="relative bg-white rounded-2xl m-10 p-10 shadow-xl">
-                        <div class="w-20 h-20 rounded-full overflow-hidden mx-auto">
-                            <img src="./assets/anh1.jpg" class="w-full">
-                        </div>
-                        <div class="absolute top-0 right-3 h-full w-16 flex flex-col justify-center">
-                            <a href="sms:0868893340" role="btn" class="overflow-hidden rounded-full bg-white shadow-xl m-3">
-                                <div class="h-10 w-10 p-2">
-                                    <img src="./assets/message.png" class="h-full">
-                                </div>
-                            </a>
-                            <a href="tel:0868893340" role="btn" class="overflow-hidden rounded-full bg-white shadow-xl m-3">
-                                <div class=" h-10 w-10 p-2">
-                                    <img src="./assets/calling.png" class="h-full">
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="m-3">
-                            <p class="text-gray-600 text-3xl text-center">Nghia Ca Ngao</p>
-                            <p class="text-gray-400 text-lg text-center">Sinh vien</p>
-                        </div>
-                    </div>
-
-                    <div class="m-10">
-                        <div class="flex flex-wrap">
-                            <a href="https://www.facebook.com/nghia.cangao" target="_blank"
-                                class="m-2 bg-white rounded-xl text-4xl text-blue-600 h-16 w-16 shadow-xl flex justify-center items-center">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            <a href="https://github.com/NghiaCaNgao" target="_blank"
-                                class="m-2 bg-white rounded-xl text-4xl text-gray-700 h-16 w-16 shadow-xl flex justify-center items-center">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/nghiacangao/" target="_blank"
-                                class="m-2 bg-white rounded-xl text-4xl text-blue-500 h-16 w-16 shadow-xl flex justify-center items-center">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://www.instagram.com/nghiacangao/" target="_blank"
-                                class="m-2 bg-white rounded-xl text-4xl text-pink-500 h-16 w-16 shadow-xl flex justify-center items-center">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </div>
 </body>
-<script type="text/javascript" src="app.js"></script>
+<script src="./app.js"> </script>
 
 </html>

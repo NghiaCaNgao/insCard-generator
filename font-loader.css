@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yb/r/WNfBhPMH-tK.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/y4/r/R8YXw4N9E9j.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yC/r/VImyNPTrDi8.woff2) format('woff2')
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yH/r/LwNYcxufeAO.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yx/r/4QCyqhX8hVM.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/y5/r/_a_FWcDLOaW.woff2) format('woff2')
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yI/r/SgBCd7FtkqG.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/y9/r/kMUqSktQbdh.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yo/r/Ep8TfEmMQy4.woff2) format('woff2')
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yW/r/4jvgQKPP4Bn.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yi/r/tW4T4nZUaq7.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yq/r/a9XRAliizkb.woff2) format('woff2')
+}
+
+@font-face {
+    font-family: 'Instagram Sans Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yR/r/Avj_C9HL6ow.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yS/r/8Z8uv9m22x_.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yF/r/OIHqJOkcQqn.woff2) format('woff2')
+}
+
+@font-face {
+    font-family: 'Instagram Sans Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yF/r/14HRBAtMVX_.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yz/r/QgrIlNd8v2o.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yG/r/y1LOEvM7ivO.woff2) format('woff2')
+}
+
+@font-face {
+    font-family: 'Instagram Sans Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/y6/r/lhVA3oEZHfn.woff2) format('woff2'), url(https://static.xx.fbcdn.net/rsrc.php/ya/r/Q6CBUU2qiCf.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/ye/r/wVT7iqi8fAg.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Instagram Sans Script';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yI/r/9sSjGWzcdQQ.woff2) format('woff2'), url(https://static.xx.fbcdn.net/rsrc.php/yn/r/PeFb6BlQNdl.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yP/r/alk7iKpRH8Y.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Instagram Sans Headline';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yP/r/Wrn2vzKGrmd.woff2) format('woff2'), url(https://static.xx.fbcdn.net/rsrc.php/yI/r/rg6gQ4UgIhI.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/y3/r/DVz3D5ih2cv.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yU/r/A6UEEU1TLKz.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yB/r/qAkq_RbUpDE.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yC/r/Pc1zjEBdI1-.woff2) format('woff2');
+    unicode-range: U+0600-06FF, U+0750-077F
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yr/r/3XLQpRvvRn-.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/y5/r/H6kdSCavuh1.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yW/r/qmlkEtPAjuX.woff2) format('woff2');
+    unicode-range: U+0600-06FF, U+0750-077F
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yA/r/yj34BkO15HD.ttf) format('truetype');
+    unicode-range: U+0980-09FF
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yC/r/GWnAWikvln8.ttf) format('truetype');
+    unicode-range: U+0980-09FF
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yH/r/wgreuAfS5II.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yS/r/VC7BuoO_0i3.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yO/r/HZ1E6tDCBW_.woff2) format('woff2');
+    unicode-range: U+0400-04FF, U+0500-052F
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yN/r/QXuOjz-orjP.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yv/r/T-5kYbeR4Dd.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yE/r/-_g1LB5gUxG.woff2) format('woff2');
+    unicode-range: U+0400-04FF, U+0500-052F
+}
+
+@font-face {
+    font-family: 'Instagram Sans Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/y6/r/7rUq_XIMHIB.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yh/r/Eh4V6wavFyL.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yv/r/4rWafchfG8K.woff2) format('woff2');
+    unicode-range: U+0400-04FF, U+0500-052F
+}
+
+@font-face {
+    font-family: 'Instagram Sans Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/y5/r/vyZYuSi0y5N.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yX/r/3SiVkfxzswk.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/ye/r/0snalW5jH01.woff2) format('woff2');
+    unicode-range: U+0400-04FF, U+0500-052F
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yh/r/bXaDdhjgv3C.ttf) format('truetype');
+    unicode-range: U+0900-097F, U+A8E0-A8FF, U+11B00-11B5F, U+1CD0-1CFF
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yc/r/olcdz7oHgLD.ttf) format('truetype');
+    unicode-range: U+0900-097F, U+A8E0-A8FF, U+11B00-11B5F, U+1CD0-1CFF
+}
+
+@font-face {
+    font-family: 'Instagram Sans Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yS/r/wA0T3Wf4WAr.ttf) format('truetype');
+    unicode-range: U+0900-097F, U+A8E0-A8FF, U+11B00-11B5F, U+1CD0-1CFF
+}
+
+@font-face {
+    font-family: 'Instagram Sans Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yu/r/QcXrKcu8d_K.ttf) format('truetype');
+    unicode-range: U+0900-097F, U+A8E0-A8FF, U+11B00-11B5F, U+1CD0-1CFF
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yl/r/xwylcC3PYq-.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yW/r/iKcLNfN1iov.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/y2/r/HO5QUXES5AH.woff2) format('woff2');
+    unicode-range: U+0370-03FF, U+1F00-1FFF
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yU/r/L4lu6qUd0V9.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yN/r/pT-XT2cwKia.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yz/r/BFbWo-4Zmyy.woff2) format('woff2');
+    unicode-range: U+0370-03FF, U+1F00-1FFF
+}
+
+@font-face {
+    font-family: 'Instagram Sans Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/y2/r/sdvCGxh7A0Z.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yA/r/3qrQtxtZMGy.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yj/r/L9Z2Kk-XLGC.woff2) format('woff2');
+    unicode-range: U+0370-03FF, U+1F00-1FFF
+}
+
+@font-face {
+    font-family: 'Instagram Sans Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/y-/r/3brV8xeHGF3.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yC/r/yj-Z7_JT9nk.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yh/r/ce18LiwTIMK.woff2) format('woff2');
+    unicode-range: U+0370-03FF, U+1F00-1FFF
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yE/r/CspVwMQg5mu.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yu/r/SQrVQLuilmI.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yq/r/Ue2_0TYHykK.woff2) format('woff2');
+    unicode-range: U+0A80-0AFF
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yL/r/SH2dw0jy6ZY.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yb/r/GK4j6TdiO1n.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yv/r/gH8DNqYt3gs.woff2) format('woff2');
+    unicode-range: U+0A80-0AFF
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yL/r/L853YncL6jE.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yf/r/GqWq1exBz4j.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/ym/r/crwPLEOx4Eb.woff2) format('woff2');
+    unicode-range: U+0590-05FF
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/y7/r/7uBE4HGuIED.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yJ/r/Bm0MLG8dKY_.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yt/r/Yh82sgYgFDB.woff2) format('woff2');
+    unicode-range: U+0590-05FF
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/y5/r/AQgSiYG2CpM.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yQ/r/aAa9h5ClBIp.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yy/r/Jis865fzVmn.woff2) format('woff2');
+    unicode-range: U+3041-3096, U+30A0-30FF, U+3400-4DB5, U+4E00-9FCB, U+F900-FA6A, U+2E80-2FD5, U+FF5F-FF9F, U+3000-303F, U+31F0-31FF, U+3220-3243, U+3280-337F, U+FF01-FF5E
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yX/r/UI69M9MsNeQ.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yT/r/8zNozLSbCjO.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/ym/r/9DWo_ivzKwM.woff2) format('woff2');
+    unicode-range: U+3041-3096, U+30A0-30FF, U+3400-4DB5, U+4E00-9FCB, U+F900-FA6A, U+2E80-2FD5, U+FF5F-FF9F, U+3000-303F, U+31F0-31FF, U+3220-3243, U+3280-337F, U+FF01-FF5E
+}
+
+@font-face {
+    font-family: 'Instagram Sans Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yX/r/U5F6HyS4iLK.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yp/r/gTNwpZo1S3Z.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yF/r/l_SnzxPMAWh.woff2) format('woff2');
+    unicode-range: U+3041-3096, U+30A0-30FF, U+3400-4DB5, U+4E00-9FCB, U+F900-FA6A, U+2E80-2FD5, U+FF5F-FF9F, U+3000-303F, U+31F0-31FF, U+3220-3243, U+3280-337F, U+FF01-FF5E
+}
+
+@font-face {
+    font-family: 'Instagram Sans Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yK/r/-061xnGjLkS.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yV/r/qOSj8hx5gFN.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yL/r/2Ia5ZPO6afq.woff2) format('woff2');
+    unicode-range: U+3041-3096, U+30A0-30FF, U+3400-4DB5, U+4E00-9FCB, U+F900-FA6A, U+2E80-2FD5, U+FF5F-FF9F, U+3000-303F, U+31F0-31FF, U+3220-3243, U+3280-337F, U+FF01-FF5E
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/y-/r/-f2a9VlE98S.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/ya/r/8R1c9hw9FoK.woff2) format('woff2');
+    unicode-range: U+0C80-0CFF
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yI/r/zlaAlcV4jzm.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yw/r/IcppmLIncFu.woff2) format('woff2');
+    unicode-range: U+0C80-0CFF
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/y1/r/MUZfDzCq4LG.woff) format('ttf'), url(https://static.xx.fbcdn.net/rsrc.php/y1/r/MUZfDzCq4LG.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/y6/r/CDmCosTafEZ.woff2) format('woff2');
+    unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7AF, U+D7B0-D7FF
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yx/r/5WWzHX1WG-k.woff) format('ttf'), url(https://static.xx.fbcdn.net/rsrc.php/yx/r/5WWzHX1WG-k.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yQ/r/itMn9Vy7fv2.woff2) format('woff2');
+    unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7AF, U+D7B0-D7FF
+}
+
+@font-face {
+    font-family: 'Instagram Sans Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yL/r/gbapZTDH9L7.woff) format('ttf'), url(https://static.xx.fbcdn.net/rsrc.php/yL/r/gbapZTDH9L7.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yr/r/lal1VEncr3G.woff2) format('woff2');
+    unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7AF, U+D7B0-D7FF
+}
+
+@font-face {
+    font-family: 'Instagram Sans Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/y1/r/C9bTAODa43Y.woff) format('ttf'), url(https://static.xx.fbcdn.net/rsrc.php/y1/r/C9bTAODa43Y.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yz/r/r6A7QjmATN-.woff2) format('woff2');
+    unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7AF, U+D7B0-D7FF
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yd/r/PB75SVH1f9B.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/y1/r/PUVY0hQ0p25.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yp/r/86jKD1CjUQR.woff2) format('woff2');
+    unicode-range: U+0B80-0BFF, U+11FC0-11FFF
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yR/r/K7n39Njy-V8.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yQ/r/_v6UzCANpmB.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/yX/r/qjwhsoLd-cs.woff2) format('woff2');
+    unicode-range: U+0B80-0BFF, U+11FC0-11FFF
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/yL/r/7tbz0LOLXvi.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yw/r/fEfLGWuMP4S.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/y5/r/Jd-z62s9vWP.woff2) format('woff2');
+    unicode-range: U+0E00-0E7F
+}
+
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.xx.fbcdn.net/rsrc.php/ye/r/Z-1wggoKTMU.ttf) format('truetype'), url(https://static.xx.fbcdn.net/rsrc.php/yp/r/23bdheEwiOi.woff) format('woff'), url(https://static.xx.fbcdn.net/rsrc.php/y8/r/vWRlPDEOMw8.woff2) format('woff2');
+    unicode-range: U+0E00-0E7F
+}
